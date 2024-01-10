@@ -1,0 +1,8 @@
+#!/bin/bash
+dp() {
+	docker system prune -f --volumes
+}
+
+topdu() {
+	du -a -h / | sort -n -r | head -n 25
+}
